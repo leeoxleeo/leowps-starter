@@ -1,0 +1,27 @@
+{
+  "name": "leowps-starter",
+  "version": "1.0.0",
+  "description": "Starter Theme Wordpress para facilitar o desenvolvimento de temas",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeoxleeo/leowps-starter.git"
+  },
+  "keywords": [
+    "wordpress-theme",
+    "leowps-starter",
+    "gulp"
+  ],
+  "author": "Leonardo <leonardo@leodesigner.com.br>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeoxleeo/leowps-starter/issues"
+  },
+  "homepage": "https://github.com/leeoxleeo/leowps-starter#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

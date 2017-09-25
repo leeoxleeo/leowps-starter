@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  display: block; margin-bottom: $gutter-heading; font-family: $font-heading;
+}
+
+h1{font-size: $size-h1; text-transform: uppercase; font-weight: 700;}
+h2{font-size: $size-h2; text-transform: uppercase; font-weight: 300;}
+h3{font-size: $size-h3; text-transform: uppercase; font-weight: 700;}
+h4{font-size: $size-h4; text-transform: uppercase; font-weight: 300;}
+h5{font-size: $size-h5; text-transform: uppercase; font-weight: 700;}
+h6{font-size: $size-h6; text-transform: uppercase; font-weight: 700;}
+p{display: block; font-size: $size-p; line-height: $size-p * 1.5;}
+
+a{text-decoration: none; outline: 0;
+  &:hover,
+    &:focus{text-decoration: none;}
+}
+
+b,
+strong{font-size: inherit; font-weight: 700;}
+
+small{font-size: $size-small;}
+pre{font-family: monospace, monospace, sans-serif;}

@@ -1,0 +1,50 @@
+// cores utilizadas no site
+$color-one: #909090;
+$color-two: #909090;
+$color-three: #909090;
+$color-four: #909090;
+$color-five: #909090;
+
+// cores padrões do framework
+$color-blue: #3B96E5;
+$color-gray: #808080;
+$color-black: #303030;
+$color-yellow: #FFC654;
+$color-red: #FD2E2E;
+$color-green: #50F568;
+$color-white: #F9F9F9;
+$color-orange: #F77B38;
+
+// fontes utilizadas no tema
+$font-normal: 'Open Sans', sans-serif;
+$font-heading: 'Montserrat', sans-serif;
+
+// tamanho de fontes utilizadas no site
+$size-hero: 3.375em;//56px
+$size-h1: 3em; //48px
+$size-h2: 2.625em; //42px
+$size-h3: 2.375em; //38px
+$size-h4: 2em; //32px
+$size-h5: 1.75em; //28px
+$size-h6: 1.5em; //24px
+$size-p: 1.125em; //18px
+$size-small: 0.9375em; //15px
+
+// espaçamentos
+$gutter: 3em;
+$gutter-heading: 1em;
+$gutter-content: 2em;
+
+// tamanho do controlador do conteúdo
+$content-mobile: 95%;
+$content-tablet: 90%;
+$content-notebook: 85%;
+$content-ultrabook: 80%;
+$content-desktop: 75%;
+
+// breakpoints para design responsivo
+$mobile: 48em;
+$tablet: 75em;
+$notebook: 80em;
+$ultrabook: 85em;
+$desktop: 105em;

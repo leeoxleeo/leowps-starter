@@ -1,0 +1,20 @@
+.main-header{
+  .navbar{
+    .navbar-brand{
+      h2{margin: 0; font-weight: 300; font-size: $size-h5;}
+    }
+  }
+}
+
+.main-header{
+  .navbar{
+    .navbar-nav{
+      margin: 0;
+      li{
+        margin-right: 20px;
+        &:last-of-type{margin-right: 0;}
+        a{text-transform: uppercase;}
+      }
+    }
+  }
+}
