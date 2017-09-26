@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifycss = require('gulp-uglifycss');
+var uncss = require('gulp-uncss');
 
 // plugins relacionados ao javascript
 var concat = require('gulp-concat');
@@ -29,7 +30,7 @@ var plumber = require('gulp-plumber');
 var options = require('gulp-options');
 var gulpif = require('gulp-if');
 var livereload = require('gulp-livereload');
-
+var clean = require('gulp-clean');
 // configurações de url
 var projectURL = 'http://localhost/projetos/wordpress/leowps-starter';
 
@@ -50,6 +51,11 @@ var jsWatch = './dev/js/**/*.js';
 var imagesWatch = './dev/images/**/*.*';
 var phpWatch = './**/*.php';
 
+gulp.task('clean', function () {
+  return gulp.src('dist')
+          .pipe(clean());
+});
+
 gulp.task('browser-sync', function () {
   browserSync.init({
     proxy: projectURL,
@@ -65,12 +71,12 @@ gulp.task('styles', function () {
             errLogToConsole: true,
             outputStyle: 'nested'
           }))
-          .pipe(livereload())
           .on('error', console.error.bind(console))
           .pipe(autoprefixer({browsers: ['last 2 versions', '> 5%', 'Firefox ESR']}))
           .pipe(rename({suffix: '.min'}))
           .pipe(sourcemaps.write(mapURL))
           .pipe(gulp.dest(styleURL))
+          .pipe(livereload())
           .pipe(browserSync.stream());
 });
 

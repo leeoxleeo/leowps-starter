@@ -13,7 +13,7 @@ h3{font-size: $size-h3; text-transform: uppercase; font-weight: 700;}
 h4{font-size: $size-h4; text-transform: uppercase; font-weight: 300;}
 h5{font-size: $size-h5; text-transform: uppercase; font-weight: 700;}
 h6{font-size: $size-h6; text-transform: uppercase; font-weight: 700;}
-p{display: block; font-size: $size-p; line-height: $size-p * 1.5;}
+p{font-family: $font-normal; display: block; font-size: $size-p; line-height: $size-p * 1.5;}
 
 a{text-decoration: none; outline: 0;
   &:hover,

@@ -1,0 +1,22 @@
+.home-hero{
+  background: url('../images/background.jpg');
+  @include background-parallax;
+}
+
+.home-about{
+  .row{margin-bottom: $gutter-content;}
+  .section-footer{text-align: center;}
+}
+
+.home-funcionalities{
+  background: $color-white;
+  .col-lg-4{
+    text-align: center;
+    img{margin: 0 auto $gutter-content  ;}
+    h3{font-size: $size-h5;}
+  }
+}
+
+.main-post.home-post{
+  h2{font-size: $size-h5;}
+}

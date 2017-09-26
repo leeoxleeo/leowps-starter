@@ -1,4 +1,41 @@
+@charset "UTF-8";
 /** 1. RESET **/
+html,
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6875em;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+
+/* listas */
+ul,
+ol {
+  list-style: none; }
+
+/* imagens */
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0; }
+
+/* formulários */
+input,
+textarea {
+  font-size: 0.9375em;
+  font-family: "Open Sans", sans-serif; }
+
 /** 2. CONTAINERS **/
 .container {
   position: relative;
@@ -13,7 +50,8 @@
 .content {
   margin: 0 auto;
   display: block;
-  width: 90%; }
+  width: 80%;
+  padding: 3em 0; }
 
 .clear {
   clear: both; }
@@ -60,6 +98,7 @@ h6 {
   font-weight: 700; }
 
 p {
+  font-family: "Open Sans", sans-serif;
   display: block;
   font-size: 1.125em;
   line-height: 1.6875em; }
@@ -82,6 +121,9 @@ pre {
   font-family: monospace, monospace, sans-serif; }
 
 /** 4. HEADER **/
+.main-header .content {
+  padding: 5px 0; }
+
 .main-header .navbar .navbar-brand h2 {
   margin: 0;
   font-weight: 300;
@@ -97,13 +139,53 @@ pre {
       text-transform: uppercase; }
 
 /** 5. FOOTER **/
+.main-footer {
+  background: #303030;
+  color: #F9F9F9;
+  text-align: center; }
+
 /** 6. SIDEBAR **/
 /** 7. HOMEPAGE **/
+.home-hero {
+  background: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.home-about .row {
+  margin-bottom: 2em; }
+
+.home-about .section-footer {
+  text-align: center; }
+
+.home-funcionalities {
+  background: #F9F9F9; }
+  .home-funcionalities .col-lg-4 {
+    text-align: center; }
+    .home-funcionalities .col-lg-4 img {
+      margin: 0 auto 2em; }
+    .home-funcionalities .col-lg-4 h3 {
+      font-size: 1.75em; }
+
+.main-post.home-post h2 {
+  font-size: 1.75em; }
+
 /** #. HELPERS **/
 .section-hero .jumbotron {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
   margin: 0;
   text-align: center;
-  padding: 12em 0; }
+  padding: 12em 0;
+  color: #F9F9F9; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3em; }
+
+.row-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*# sourceMappingURL=style.min.css.map */

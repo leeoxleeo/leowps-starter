@@ -1,5 +1,13 @@
 .section-hero{
   .jumbotron{
-    background: rgba(0,0,0,0.2); margin: 0; text-align: center; padding: $gutter * 4 0;
+    background: rgba(0,0,0,0.8); margin: 0; text-align: center; padding: $gutter * 4 0; color: $color-white;
   }
+}
+
+.section-header{
+  text-align: center; margin-bottom: $gutter;
+}
+
+.row-center{
+  align-items: center;
 }

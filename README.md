@@ -1,5 +1,13 @@
 # leowps-starter
-Starter Theme Wordpress para facilitar o desenvolvimento de temas
+
+> Starter Theme Wordpress para facilitar o desenvolvimento de temas
+
+## Tecnologias utilizadas
+
+* HTML5/CSS3/jQuery
+* Bootstrap 4
+* SASS(CSS)
+* Gulp 
 
 ## Pré Requisitos
 
