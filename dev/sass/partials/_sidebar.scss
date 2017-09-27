@@ -1,0 +1,131 @@
+.main-sidebar{}
+
+/* # widget */
+.widget{
+  .widget-title{}
+  .widget-content{}
+}
+
+/* # widget links */
+.widget_links{
+
+  ul{
+    li{
+      a{}
+    }
+  }
+}
+
+/* # widget meta */
+.widget_meta{
+  ul{
+    li{
+      a{}
+    }
+  }
+}
+
+/* # widget pages */
+.widget_pages{
+  ul{
+    li{
+      a{}
+    }
+  }
+}
+
+/* # widget posts recentes */
+.widget_recente_entries{
+  ul{
+    li{
+      a{}
+    }
+  }
+}
+
+/* # widget arquivo */
+.widget_archive{
+  ul{
+    li{
+      a{}
+    }
+  }
+  select{}
+  option{}
+}
+
+/* # widget nuvem de tags */
+.widget_links{
+  li{
+    &:after{}
+    &:before{}
+  }
+}
+
+.widget_tag_cloud{
+  a{
+    &:after{}
+    &:before{}
+  }
+}
+
+/* # widget calendário */
+.widget_calendar{
+
+}
+
+#calendar_wrap{
+  th{}
+  td{}
+}
+
+#wp-calendar{
+  tr{
+    td{}
+  }
+  caption{}
+  a{}
+  #today{}
+  #prev{
+    a{}
+  }
+  #next{
+    a{}
+  }
+}
+
+/* # widget categorias */
+.widget_categories{
+  ul{
+    li{
+      a{}
+    }
+    ul.children{}
+  }
+  select{}
+  select#cat{}
+  select.postform{}
+  option{}
+  .level-0{}
+  .level-1{}
+  .level-2{}
+  .level-3{}
+}
+
+/* # widget comentários recentes */
+.recentcomments{}
+#recentcomments{
+  li{
+    a{}
+  }
+}
+.widget_recent_comments{}
+
+/* # widget pesquisa */
+#searchform{}
+.widget_search{
+  .screen-reader-text{}
+}
+
+/* # widget texto */
+.widget_text{}

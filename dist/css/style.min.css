@@ -145,6 +145,18 @@ pre {
   text-align: center; }
 
 /** 6. SIDEBAR **/
+/* # widget */
+/* # widget links */
+/* # widget meta */
+/* # widget pages */
+/* # widget posts recentes */
+/* # widget arquivo */
+/* # widget nuvem de tags */
+/* # widget calendário */
+/* # widget categorias */
+/* # widget comentários recentes */
+/* # widget pesquisa */
+/* # widget texto */
 /** 7. HOMEPAGE **/
 .home-hero {
   background: url("../images/background.jpg");
@@ -171,6 +183,20 @@ pre {
 .main-post.home-post h2 {
   font-size: 1.75em; }
 
+/** 8. SINGLE **/
+.main-post.single-post .post-header .post-meta ul {
+  margin: 2em 0; }
+  .main-post.single-post .post-header .post-meta ul li {
+    display: inline-block; }
+
+.main-post.single-post .post-content {
+  padding: 2em; }
+
+.single .post-navigation {
+  margin-bottom: 2em; }
+  .single .post-navigation .screen-reader-text {
+    display: none; }
+
 /** #. HELPERS **/
 .section-hero .jumbotron {
   background: rgba(0, 0, 0, 0.8);
@@ -187,5 +213,61 @@ pre {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+/** #. HELPER\WORDPRESS **/
+.post-content img {
+  margin: 0 0 1.5em 0; }
+
+.alignleft, img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left; }
+
+.alignright, img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right; }
+
+.aligncenter, img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both; }
+
+.alignnone, img.alignnone {
+  /* not sure about this one */ }
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding-top: 5px; }
+
+.wp-caption img {
+  border: 0 none;
+  padding: 0;
+  margin: 0; }
+
+.wp-caption p.wp-caption-text {
+  line-height: 1.5;
+  font-size: 10px;
+  margin: 0; }
+
+.wp-smiley {
+  margin: 0 !important;
+  max-height: 1em; }
+
+blockquote.left {
+  margin-right: 20px;
+  text-align: right;
+  margin-left: 0;
+  width: 33%;
+  float: left; }
+
+blockquote.right {
+  margin-left: 20px;
+  text-align: left;
+  margin-right: 0;
+  width: 33%;
+  float: right; }
 
 /*# sourceMappingURL=style.min.css.map */

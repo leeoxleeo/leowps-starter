@@ -1,4 +1,4 @@
-<article class="main-post single-post">
+<article class="main-post single-page">
   <header class="post-header">
     <h1 class="post-title"><?php the_title(); ?></h1>
     <?php
@@ -6,12 +6,6 @@
       the_post_thumbnail();
     endif;
     ?>
-    <div class="post-meta">
-      <ul>
-        <li><i class="fa fa-folder"></i> <?php the_category( '| ' ); ?></li>
-        <li><i class="fa fa-user"></i> <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ), get_the_author_meta( 'user_nicename' )); ?>"><?php the_author(); ?></a></li>
-      </ul>
-    </div>
   </header>
   <div class="post-content">
     <?php the_content(); ?>
@@ -24,5 +18,4 @@
     comments_template();
   endif;
   ?>
-
 </article>

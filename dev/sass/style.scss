@@ -22,5 +22,11 @@
 /** 7. HOMEPAGE **/
 @import 'pages/_home';
 
+/** 8. SINGLE **/
+@import 'pages/_single';
+
 /** #. HELPERS **/
-@import 'helpers/helper';
+@import 'helpers/_helper';
+
+/** #. HELPER\WORDPRESS **/
+@import 'helpers/_wordpress';

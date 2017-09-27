@@ -58,11 +58,11 @@ if (!function_exists('leowps_starter_setup')):
 
     // suporte para adicionar e atualizar widgets em tempo real
     add_theme_support('customize-selective-refresh-widgets');
-    
+
     // registro do menu principal do tema
-    register_nav_menus( array(
-        'primary' => esc_html__( 'Menu Principal', 'leowps-starter' ),
-    ) );
+    register_nav_menus(array(
+        'primary' => esc_html__('Menu Principal', 'leowps-starter'),
+    ));
   }
 
   add_action('after_setup_theme', 'leowps_starter_setup');
@@ -108,18 +108,85 @@ if (!function_exists('leowps_starter_cleaner')):
   }
 
   add_action('after_setup_theme', 'leowps_starter_cleaner');
-  
+
 endif;
 
 /**
  * Função para remover a barra admin do Wordpress
  */
-if( !function_exists( 'leowps_starter_remove_admin' ) ):
-  
-  function leowps_starter_remove_admin(){
+if (!function_exists('leowps_starter_remove_admin')):
+
+  function leowps_starter_remove_admin() {
     return false;
   }
-  
-  add_filter( 'show_admin_bar', 'leowps_starter_remove_admin' );
+
+  add_filter('show_admin_bar', 'leowps_starter_remove_admin');
+
+endif;
+
+/**
+ * Registro da barra lateral do tema
+ * @link https://developer.wordpress.org/reference/functions/register_sidebar/
+ */
+if (!function_exists('leowps_starter_widgets_init')):
+
+  function leowps_starter_widgets_init() {
+
+    /**
+     * @since 1.0
+     */
+    register_sidebar(array(
+        'name' => __('Barra Lateral', 'leowps-starter'),
+        'id' => 'custom-sidebar',
+        'description' => __('Os widgets adicionados aqui serão mostrados na barra lateral do site', 'leowps-starter'),
+        'before_widget' => '<article id="%1$s" class="custom-widget %2$s"><div class="widget-content">',
+        'after_widget' => '</div></article>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+  }
+
+  add_action('widgets_init', 'leowps_starter_widgets_init');
+
+endif;
+
+/**
+ * Comentários Personalizados
+ */
+if (!function_exists('leowps_starter_comments')):
+
+  function leowps_starter_comments($comment, $args, $depth) {
+    $comment_id = (int) $comment->comment_ID;
+    $user_avatar = get_avatar($comment, 160);
+    $user_name = get_comment_author();
+    $dt = get_comment_date('d/m/Y H:i');
+    $content = get_comment_text();
+    $reply = get_comment_reply_link(array(
+        'replay_text' => 'Responder',
+        'respond_id' => 'responder',
+        'depth' => $depth,
+        'max_depth' => $args['max_depth']
+    ));
+    $html = sprintf(
+          '<div class="comment-item" id="comment-%1$s">'
+          . '<span class="comment-avatar">'
+          . '%2$s'
+          . '</span>'
+          . '<div class="comment-content" id="comment-%1$s">'
+          . '<span class="comment-info">'
+          . '<strong class="comment-author">%3$s</strong>'
+          . '<span class="comment-date">%4$s</span>'
+          . '</span>'
+          . '<p>'
+          . '%5$s'
+          . '<span class="comment-reply">'
+          . '%6$s'
+          . '<span>'
+          . '</p>'
+          . '</div>'
+          . '</div>', $comment_id, $user_avatar, $user_name, $dt, $content, $reply
+    );
+    echo $html;
+  }
   
 endif;
