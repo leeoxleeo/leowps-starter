@@ -6,6 +6,8 @@
  */
 ?><?php
 
+require_once get_stylesheet_directory() . '/config/init.php';
+
 if (!function_exists('leowps_starter_setup')):
 
   function leowps_starter_setup() {
@@ -79,6 +81,7 @@ if (!function_exists('leowps_starter_scripts')):
     wp_deregister_script('jquery');
 
     wp_enqueue_style('bootstrap', get_bloginfo('template_url') . '/dist/css/bootstrap.css', array(), '4.0', 'all');
+    wp_enqueue_style('font-awesome', get_bloginfo('template_url') . '/dist/css/font-awesome/css/font-awesome.min.css', array(), '4.7.0', 'all');
     wp_enqueue_style('main', get_bloginfo('template_url') . '/dist/css/style.min.css', array(), '1.0', 'all');
 
     wp_enqueue_script('jquery', get_bloginfo('template_url') . '/dist/js/jquery.js', '', '', true);
@@ -91,6 +94,7 @@ endif;
 
 /**
  * Funções para limpar o código gerado pelo Wordpress
+ * Essa função é importante por segurança
  */
 if (!function_exists('leowps_starter_cleaner')):
 
@@ -113,6 +117,7 @@ endif;
 
 /**
  * Função para remover a barra admin do Wordpress
+ * Troque 'false' por 'true' para ativar a barra admin
  */
 if (!function_exists('leowps_starter_remove_admin')):
 
@@ -190,3 +195,27 @@ if (!function_exists('leowps_starter_comments')):
   }
   
 endif;
+
+/**
+ * Adicionar classe personalizada do Bootstrap ao link do menu principal
+ */
+function leowps_starter_custom_li( $classes, $item, $args ){
+  $classes[] = 'nav-item';
+  return $classes;
+}
+
+add_filter('nav_menu_css_class', 'leowps_starter_custom_li', 1, 3);
+
+function leowps_starter_custom_link( $ulclass ){
+  return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+}
+
+add_filter('wp_nav_menu', 'leowps_starter_custom_link');
+
+/**
+ * Resumo personalizado para os posts
+ */
+function leowps_starter_excerpt( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'leowps_starter_excerpt', 999 );

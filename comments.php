@@ -47,7 +47,7 @@
 
     <div class="comments-list">
       <?php printf('<h3>Comentários Recentes</h3>', 'leowps-starter'); ?>
-      <?php wp_list_comments('callback=leowps_starter_commentsf'); ?>
+      <?php wp_list_comments('callback=leowps_starter_comments'); ?>
     </div>
 
   <?php

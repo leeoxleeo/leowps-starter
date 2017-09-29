@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/** 1. RESET **/
+/** ======================================== **/
+/** ************** 1. RESET  *************** **/
+/** ======================================== **/
 html,
 body {
   max-width: 100%;
@@ -27,7 +29,6 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-  vertical-align: middle;
   border: 0; }
 
 /* formulários */
@@ -36,7 +37,9 @@ textarea {
   font-size: 0.9375em;
   font-family: "Open Sans", sans-serif; }
 
-/** 2. CONTAINERS **/
+/** ======================================== **/
+/** ************ 2. CONTAINERS  ************ **/
+/** ======================================== **/
 .container {
   position: relative;
   display: block;
@@ -56,7 +59,9 @@ textarea {
 .clear {
   clear: both; }
 
-/** 3. TYPOGRAPHY **/
+/** ======================================== **/
+/** ************ 3. TYPOGRAPHY  ************ **/
+/** ======================================== **/
 h1,
 h2,
 h3,
@@ -120,7 +125,9 @@ small {
 pre {
   font-family: monospace, monospace, sans-serif; }
 
-/** 4. HEADER **/
+/** ======================================== **/
+/** ************** 4. HEADER  ************** **/
+/** ======================================== **/
 .main-header .content {
   padding: 5px 0; }
 
@@ -132,19 +139,23 @@ pre {
 .main-header .navbar .navbar-nav {
   margin: 0; }
   .main-header .navbar .navbar-nav li {
-    margin-right: 20px; }
+    margin-right: 2em; }
     .main-header .navbar .navbar-nav li:last-of-type {
       margin-right: 0; }
     .main-header .navbar .navbar-nav li a {
       text-transform: uppercase; }
 
-/** 5. FOOTER **/
+/** ======================================== **/
+/** ************** 5. FOOTER  ************** **/
+/** ======================================== **/
 .main-footer {
   background: #303030;
   color: #F9F9F9;
   text-align: center; }
 
-/** 6. SIDEBAR **/
+/** ======================================== **/
+/** ************** 6. SIDEBAR  ************* **/
+/** ======================================== **/
 /* # widget */
 /* # widget links */
 /* # widget meta */
@@ -157,7 +168,9 @@ pre {
 /* # widget comentários recentes */
 /* # widget pesquisa */
 /* # widget texto */
-/** 7. HOMEPAGE **/
+/** ======================================== **/
+/** ************* 7. HOMEPAGE  ************* **/
+/** ======================================== **/
 .home-hero {
   background: url("../images/background.jpg");
   background-position: center;
@@ -183,7 +196,9 @@ pre {
 .main-post.home-post h2 {
   font-size: 1.75em; }
 
-/** 8. SINGLE **/
+/** ======================================== **/
+/** ************** 8. SINGLE  ************** **/
+/** ======================================== **/
 .main-post.single-post .post-header .post-meta ul {
   margin: 2em 0; }
   .main-post.single-post .post-header .post-meta ul li {
@@ -197,7 +212,9 @@ pre {
   .single .post-navigation .screen-reader-text {
     display: none; }
 
-/** #. HELPERS **/
+/** ======================================== **/
+/** ************** #. HELPER  ************** **/
+/** ======================================== **/
 .section-hero .jumbotron {
   background: rgba(0, 0, 0, 0.8);
   margin: 0;
@@ -214,7 +231,9 @@ pre {
       -ms-flex-align: center;
           align-items: center; }
 
-/** #. HELPER\WORDPRESS **/
+/** ======================================== **/
+/** ******** #. HELPER::WORDPRESS  ********* **/
+/** ======================================== **/
 .post-content img {
   margin: 0 0 1.5em 0; }
 

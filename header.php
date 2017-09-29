@@ -19,11 +19,11 @@
 
         <nav class="navbar navbar-toggleable-lg navbar-light">
 
-          <a href="" class="navbar-brand header-logo">
+          <a href="<?php echo esc_url( THEME_HOME ); ?>" class="navbar-brand header-logo" title="<?php echo esc_html( THEME_NAME ); ?>">
             <?php if (has_custom_logo()): ?>
               <?php the_custom_logo(); ?>
             <?php else: ?>
-              <?php echo '<h2>' . get_bloginfo('name') . '</h2>'; ?>
+              <?php echo '<h2>' . esc_html( THEME_NAME ) . '</h2>'; ?>
             <?php endif; ?>
           </a>
           
