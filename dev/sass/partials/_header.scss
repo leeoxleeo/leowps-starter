@@ -1,11 +1,15 @@
 .main-header{
-  .content{padding: 5px 0;}
+  .content{padding: 10px 0;}
 }
 
 .main-header{
   .navbar{
     .navbar-brand{
-      h2{margin: 0; font-weight: 300; font-size: $size-h5;}
+      h2{margin: 0; font-weight: 300; font-size: $size-h5;
+        @include responsive-tablet{
+          font-size: $size-small;
+        }
+      }
     }
   }
 }

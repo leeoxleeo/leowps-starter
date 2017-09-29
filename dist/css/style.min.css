@@ -53,8 +53,23 @@ textarea {
 .content {
   margin: 0 auto;
   display: block;
-  width: 80%;
-  padding: 3em 0; }
+  padding: 3em 0;
+  width: 80%; }
+  @media (max-width: 48em) {
+    .content {
+      width: 90%; } }
+  @media (max-width: 75em) {
+    .content {
+      width: 90%; } }
+  @media (max-width: 80em) {
+    .content {
+      width: 85%; } }
+  @media (max-width: 85em) {
+    .content {
+      width: 80%; } }
+  @media (min-width: 105em) {
+    .content {
+      width: 75%; } }
 
 .clear {
   clear: both; }
@@ -129,12 +144,15 @@ pre {
 /** ************** 4. HEADER  ************** **/
 /** ======================================== **/
 .main-header .content {
-  padding: 5px 0; }
+  padding: 10px 0; }
 
 .main-header .navbar .navbar-brand h2 {
   margin: 0;
   font-weight: 300;
   font-size: 1.75em; }
+  @media (max-width: 75em) {
+    .main-header .navbar .navbar-brand h2 {
+      font-size: 0.9375em; } }
 
 .main-header .navbar .navbar-nav {
   margin: 0; }

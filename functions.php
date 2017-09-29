@@ -86,6 +86,7 @@ if (!function_exists('leowps_starter_scripts')):
 
     wp_enqueue_script('jquery', get_bloginfo('template_url') . '/dist/js/jquery.js', '', '', true);
     wp_enqueue_script('bootstrap', get_bloginfo('template_url') . '/dist/js/bootstrap.min.js', '', '', true);
+    wp_enqueue_script('main', get_bloginfo('template_url') . '/dist/js/main.min.js', array(), '1.0', 'all');
   }
 
   add_action('wp_enqueue_scripts', 'leowps_starter_scripts');

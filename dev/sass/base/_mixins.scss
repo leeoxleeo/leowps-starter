@@ -4,3 +4,33 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+@mixin responsive-mobile{
+  @media(max-width: $mobile){
+    @content;
+  }
+}
+
+@mixin responsive-tablet{
+  @media(max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin responsive-notebook{
+  @media(max-width: $notebook){
+    @content;
+  }
+}
+
+@mixin responsive-ultrabook{
+  @media(max-width: $ultrabook){
+    @content;
+  }
+}
+
+@mixin responsive-desktop{
+  @media(min-width: $desktop){
+    @content;
+  }
+}

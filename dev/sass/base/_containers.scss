@@ -11,8 +11,23 @@
 .content{
   margin: 0 auto;
   display: block;
-  width: 80%;
   padding: $gutter 0;
+  width: 80%;
+  @include responsive-mobile{
+    width: $content-mobile;
+  }
+  @include responsive-tablet{
+    width: $content-tablet;
+  }
+  @include responsive-notebook{
+    width: $content-notebook;
+  }
+  @include responsive-ultrabook{
+    width: $content-ultrabook;
+  }
+  @include responsive-desktop{
+    width: $content-desktop;
+  }
 }
 
 .clear{

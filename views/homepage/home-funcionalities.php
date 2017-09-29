@@ -1,5 +1,5 @@
 <section class="home-funcionalities container">
-  <div class="content">
+  <div class="content" id="funcionalities">
 
     <header class="section-header">
       <h2>Principais Funcionalidades do Framework</h2>
