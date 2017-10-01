@@ -249,6 +249,24 @@ pre {
       -ms-flex-align: center;
           align-items: center; }
 
+.btn {
+  text-transform: uppercase;
+  font-weight: bolder; }
+
+.btn-primary,
+.btn-danger,
+.btn-success,
+.btn-info {
+  color: #F9F9F9; }
+  .btn-primary:focus, .btn-primary:hover,
+  .btn-danger:focus,
+  .btn-danger:hover,
+  .btn-success:focus,
+  .btn-success:hover,
+  .btn-info:focus,
+  .btn-info:hover {
+    color: #F9F9F9; }
+
 /** ======================================== **/
 /** ******** #. HELPER::WORDPRESS  ********* **/
 /** ======================================== **/

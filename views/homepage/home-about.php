@@ -2,7 +2,7 @@
   <div class="content">
 
     <header class="section-header">
-      <h2>Sobre o Framework</h2>
+      <h2>Labore et dolore magna aliqua</h2>
     </header>
 
     <div class="row row-center">

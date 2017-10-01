@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> itemscope itemtype="https://schema.org/WebSite">
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +19,14 @@
 
         <nav class="navbar navbar-toggleable-lg navbar-light">
 
-          <a href="<?php echo esc_url( THEME_HOME ); ?>" class="navbar-brand header-logo" title="<?php echo esc_html( THEME_NAME ); ?>">
+          <a href="<?php echo esc_url(THEME_HOME); ?>" class="navbar-brand header-logo" title="<?php echo esc_html(THEME_NAME); ?>">
             <?php if (has_custom_logo()): ?>
               <?php the_custom_logo(); ?>
             <?php else: ?>
-              <?php echo '<h2>' . esc_html( THEME_NAME ) . '</h2>'; ?>
+              <?php echo '<h2>' . esc_html(THEME_NAME) . '</h2>'; ?>
             <?php endif; ?>
           </a>
-          
+
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

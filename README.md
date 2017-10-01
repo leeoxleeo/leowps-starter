@@ -1,6 +1,8 @@
 # leowps-starter
 
 > Starter Theme Wordpress para facilitar o desenvolvimento de temas
+> Versão Atual: __1.0__
+> Status: __Em Produção__
 
 ## Tecnologias utilizadas
 

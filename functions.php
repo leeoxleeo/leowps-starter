@@ -194,20 +194,20 @@ if (!function_exists('leowps_starter_comments')):
     );
     echo $html;
   }
-  
+
 endif;
 
 /**
  * Adicionar classe personalizada do Bootstrap ao link do menu principal
  */
-function leowps_starter_custom_li( $classes, $item, $args ){
+function leowps_starter_custom_li($classes, $item, $args) {
   $classes[] = 'nav-item';
   return $classes;
 }
 
 add_filter('nav_menu_css_class', 'leowps_starter_custom_li', 1, 3);
 
-function leowps_starter_custom_link( $ulclass ){
+function leowps_starter_custom_link($ulclass) {
   return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
 }
 
@@ -216,7 +216,8 @@ add_filter('wp_nav_menu', 'leowps_starter_custom_link');
 /**
  * Resumo personalizado para os posts
  */
-function leowps_starter_excerpt( $length ) {
+function leowps_starter_excerpt($length) {
   return 20;
 }
-add_filter( 'excerpt_length', 'leowps_starter_excerpt', 999 );
+
+add_filter('excerpt_length', 'leowps_starter_excerpt', 999);

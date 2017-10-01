@@ -10,7 +10,7 @@
       <p>
         <a rel="nofollow" id="cancel-comment-reply-link" href="#responder" style="display: none;">Cancelar Resposta</a>
       </p>
-      <form action="<?php echo ATLAS_URL ?>/wp-comments-post.php" method="post" id="commentform">
+      <form action="<?php echo THEME_HOME ?>/wp-comments-post.php" method="post" id="commentform">
         <ul>
           <?php
           if (is_user_logged_in()):
@@ -40,14 +40,15 @@
           </li>
         </ul>
         <input name="comment_post_ID" value="<?php global $post;
-        echo $post->ID; ?>" id="comment_post_ID" type="hidden" />
+        echo $post->ID;
+          ?>" id="comment_post_ID" type="hidden" />
         <input name="comment_parent" id="comment_parent" value="<?php echo ( isset($_GET['replytocom']) ) ? $_GET['replytocom'] : '0'; ?>" type="hidden" />
       </form>
     </div>
 
     <div class="comments-list">
       <?php printf('<h3>Comentários Recentes</h3>', 'leowps-starter'); ?>
-      <?php wp_list_comments('callback=leowps_starter_comments'); ?>
+  <?php wp_list_comments('callback=leowps_starter_comments'); ?>
     </div>
 
   <?php

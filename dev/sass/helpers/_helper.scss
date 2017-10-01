@@ -11,3 +11,14 @@
 .row-center{
   align-items: center;
 }
+
+.btn{text-transform: uppercase; font-weight: bolder;}
+
+.btn-primary,
+.btn-danger,
+.btn-success,
+.btn-info{
+  color: $color-white;
+  &:focus,
+  &:hover{color: $color-white;}  
+}

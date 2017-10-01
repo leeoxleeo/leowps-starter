@@ -5,16 +5,6 @@
 get_template_part('views/homepage/home-hero');
 ?>
 
-<?php
-/* Inclusão da parte sobre do site */
-get_template_part('views/homepage/home-about');
-?>
-
-<?php
-/* Inclusão da parte de funcionalidades do site */
-get_template_part('views/homepage/home-funcionalities');
-?>
-
 <main class="main container">
   <div class="content">
 

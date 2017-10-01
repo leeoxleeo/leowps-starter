@@ -9,37 +9,37 @@
 
       <article class="col-lg-4">
         <img src="http://via.placeholder.com/150" alt="">
-        <h3>Código limpo e organizado</h3>
+        <h3>Officia deserunt mollit</h3>
         <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
 
       <article class="col-lg-4">
         <img src="http://via.placeholder.com/150" alt="">
-        <h3>CSS Base</h3>
+        <h3>Officia deserunt mollit</h3>
         <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
 
       <article class="col-lg-4">
         <img src="http://via.placeholder.com/150" alt="">
-        <h3>Bootstrap 4</h3>
+        <h3>Officia deserunt mollit</h3>
         <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
 
       <article class="col-lg-4">
         <img src="http://via.placeholder.com/150" alt="">
-        <h3>SASS(CSS)</h3>
+        <h3>Officia deserunt mollit</h3>
         <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
 
       <article class="col-lg-4">
         <img src="http://via.placeholder.com/150" alt="">
-        <h3>Gulp</h3>
+        <h3>Officia deserunt mollit</h3>
         <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
 
       <article class="col-lg-4">
         <img src="http://via.placeholder.com/150" alt="">
-        <h3>Widgets Personalizados</h3>
+        <h3>Officia deserunt mollit</h3>
         <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
 
